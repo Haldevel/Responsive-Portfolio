@@ -215,3 +215,37 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/*
+  These rules take effect when the browser's width
+  is either 980px or less.
+*/
+@media screen and (max-width: 980px) {  
+    nav {
+      padding-right: 40px;
+    }  
+
+    .main-section {
+      max-width: 956px;
+    }     
+}
+
+@media screen and (max-width: 768px) {  
+  nav {
+    padding-right: 40px;
+  }  
+
+  .main-section {
+    max-width: 748px;
+  }     
+}
+
+@media screen and (max-width: 640px) {
+  #masthead {
+    position: static; 
+  }
+  .main-section {
+    max-width: 620px;
+  }
+
+}
